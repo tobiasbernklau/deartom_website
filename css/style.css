@@ -1,6 +1,6 @@
 *{
-	margin:0;
-	padding:0
+	/*margin:0;*/
+	/*padding:0*/
 	box-sizing:border-box;
 }
 
@@ -10,6 +10,7 @@ body{
 	font-size:17px;
 	color:#ffffff;
 	line-height:1.6;
+	overflow-x:hidden;
 }
 
 /*#showcase{
@@ -51,9 +52,9 @@ body{
 	overflow:hidden;
 }
 
-.fullscreen-video-wrap{
-	min-height:100%;
+.fullscreen-video-wrap video{
 	min-width:100%;
+	min-height:100%;
 }
 
 @media(max-width:960px){
