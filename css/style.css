@@ -4,10 +4,15 @@
 	box-sizing:border-box;
 }
 
+@font-face {
+font-family: "DearTom-Regular";
+src: url("DearTom-Regular.woff") format("woff");
+}
+
 body{
 	margin:0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:17px;
+	font-size:8px;
 	color:#ffffff;
 	line-height:1.6;
 	overflow-x:hidden;
@@ -32,15 +37,16 @@ body{
 .v-header{
 	height:100vh;
 	display:flex;
-	align-items:center;
+	justify-content:left;
+	align-items:left;
+	padding:0 1rem;
 }
 
 .container{
-	max-width:960px;
+	max-height:90vh;
 	padding-left:1rem;
 	padding-right:1rem;
 	margin:auto;
-	text-align:center;
 }
 
 .fullscreen-video-wrap{
@@ -53,12 +59,54 @@ body{
 }
 
 .fullscreen-video-wrap video{
+	min-height:100vh;
 	min-width:100%;
-	min-height:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+.header-content{
+    z-index:2;
+    text-align:left;
+}
+
+.header-content h1{
+    font-family:"DearTom-Regular", Helvetica, Arial, sans-serif;
+    font-size:2rem;
+    margin-bottom:2rem;
+    line-height:100%;
+    padding-bottom:1rem;
+}
+
+.header-content p{
+    font-size:0.8rem;
+    padding-bottom:1rem;
+}
+
+.btn{
+    font-size:0.8rem;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color:transparent;
 }
 
 @media(max-width:960px){
 	.container{
 		padding-right:3rem;
 	}
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-video-wrap video{
+    width: 100vh;
+    min-height: 100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-video-wrap video{
+    min-width: 100%;
+    height: 100vh;
+  }
 }
