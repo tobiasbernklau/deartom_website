@@ -19,10 +19,6 @@ body{
 .container{
 	min-height:100vh;
 	min-width:100%;
-    padding-left:1rem;
-    padding-right:1rem;
-	padding-top:0.5rem;
-	padding-bottom:1rem;
     margin:auto;
 	height:100vh;
 	display:flex;
@@ -46,9 +42,8 @@ body{
 .content{
     z-index:2;
 	position:absolute;
-	padding-left:1rem;
-	padding-right:1rem;
-	padding-top:0.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
 	padding-bottom:1rem;
 }
 
