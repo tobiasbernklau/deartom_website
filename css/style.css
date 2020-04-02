@@ -1,6 +1,4 @@
 *{
-	/*margin:0;*/
-	/*padding:0*/
 	box-sizing:border-box;
 }
 
@@ -18,35 +16,16 @@ body{
 	overflow-x:hidden;
 }
 
-/*#showcase{
-	background-image:url('../img/schwingung_dear_tom_1920x1080_low.jpg');
-	background-size:cover;
-	background-position:center;
-	height:100vh;
-	display:flex;
-	flex-direction:column;
-	justify-content:left;
-	align-items:left;
-	padding:0 20px;
-}
-
-#showcase h1{
-	font-size:30px;
-}*/
-
-.v-header{
-	height:100vh;
-	display:flex;
-	justify-content:left;
-	align-items:left;
-	padding:0 1rem;
-}
-
 .container{
-	max-height:90vh;
-	padding-left:1rem;
-	padding-right:1rem;
-	margin:auto;
+	min-height:100vh;
+	min-width:100%;
+    padding-left:1rem;
+    padding-right:1rem;
+	padding-top:0.5rem;
+	padding-bottom:1rem;
+    margin:auto;
+	height:100vh;
+	display:flex;
 }
 
 .fullscreen-video-wrap{
@@ -62,25 +41,55 @@ body{
 	min-height:100vh;
 	min-width:100%;
 	display:flex;
-	flex-direction:column;
 }
 
-.header-content{
+.content{
     z-index:2;
-    text-align:left;
+	position:absolute;
+	padding-left:1rem;
+	padding-right:1rem;
+	padding-top:0.5rem;
+	padding-bottom:1rem;
 }
 
-.header-content h1{
+
+.header-c h1{
+    font-size:1.8rem;
     font-family:"DearTom-Regular", Helvetica, Arial, sans-serif;
-    font-size:2rem;
-    margin-bottom:2rem;
+    letter-spacing:0;
     line-height:100%;
-    padding-bottom:1rem;
+	top:0%;
 }
 
-.header-content p{
+#header-left{
+	left:0%;
+}
+
+#header-right{
+	right:0%;
+}
+
+
+.center-c{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+	width:100%;
+	height:100%;
+}
+
+.center-c p{
     font-size:0.8rem;
-    padding-bottom:1rem;
+}
+
+.links-c{
+    bottom:0%;
+    left:0%;
+}
+
+.links-c p{
+    font-size:0.8rem;
 }
 
 .btn{
@@ -95,7 +104,7 @@ body{
 
 @media(max-width:960px){
 	.container{
-		padding-right:3rem;
+		padding-right:1rem;
 	}
 }
 @media (min-aspect-ratio: 16/9) {
