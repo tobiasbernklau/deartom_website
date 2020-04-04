@@ -4,7 +4,8 @@
 
 @font-face {
 font-family: "DearTom-Regular";
-src: url("DearTom-Regular.woff") format("woff");
+src: url("DearTom-Regular.woff2") format("woff2"),
+url("DearTom-Regular.woff") format('woff');
 }
 
 body{
@@ -52,7 +53,7 @@ body{
     font-size:1.8rem;
     font-family:"DearTom-Regular", Helvetica, Arial, sans-serif;
     letter-spacing:0;
-    line-height:100%;
+    line-height:90%;
 	top:0%;
 }
 
@@ -62,6 +63,7 @@ body{
 
 #header-right{
 	right:0%;
+	text-align:right;
 }
 
 
