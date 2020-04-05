@@ -91,16 +91,20 @@ body{
     font-size:0.8rem;
 }
 
-.icons-c{
+.icons{
+	z-index:2;
+	position:absolute;
     bottom:0%;
     right:0%;
-    width:4rem;
+    padding-bottom:0.5rem;
+    padding-right:1rem;
+    width:3.3rem;
 }
 
-.icons-c img{
-    color:#ffffff;
-    float:left;
+/*.icons img:hover{
+    visibility:hidden;
 }
+*/
 
 .btn{
     font-size:0.8rem;
