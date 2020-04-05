@@ -46,12 +46,14 @@ body{
     padding-left:1rem;
     padding-right:1rem;
 	padding-bottom:1rem;
+   	color:#ffffff;
 }
 
 
 .header-c h1{
     font-size:1.8rem;
     font-family:"DearTom-Regular", Helvetica, Arial, sans-serif;
+   	color:#ffffff;
     letter-spacing:0;
     line-height:90%;
 	top:0%;
@@ -89,9 +91,20 @@ body{
     font-size:0.8rem;
 }
 
+.icons-c{
+    bottom:0%;
+    right:0%;
+    width:4rem;
+}
+
+.icons-c img{
+    color:#ffffff;
+    float:left;
+}
+
 .btn{
     font-size:0.8rem;
-    color:#ffffff;
+   	color:#ffffff;
     text-decoration: none;
 }
 
