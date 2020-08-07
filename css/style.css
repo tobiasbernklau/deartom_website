@@ -112,10 +112,18 @@ body{
     text-decoration: none;
 }
 
+.btn2{
+    color:#ffffff;
+    text-decoration: none;
+}
+
 .btn:hover{
     color:transparent;
 }
 
+.btn2:hover{
+    color:transparent;
+}
 @media(max-width:960px){
 	.container{
 		padding-right:1rem;
