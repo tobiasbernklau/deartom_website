@@ -8,6 +8,12 @@ src: url("DearTom-Regular.woff2") format("woff2"),
 url("DearTom-Regular.woff") format('woff');
 }
 
+@font-face {
+font-family: "Resial-CondensedBlack";
+src: url("Resial-CondensedBlack.woff2") format('woff2'),
+url("Resial-CondensedBlack.woff") format('woff');
+}
+
 body{
 	margin:0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -126,6 +132,30 @@ body{
     text-align: center;
 }
 
+.header-iii {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+}
+
+.header-iii h1 {
+    font-family: "Resial-CondensedBlack", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20rem;
+    color: hsl(7, 68%, 53%);
+    margin: 0;
+}
+
+.header-iii h2 {
+    font-family: "Resial-CondensedBlack", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .icons {
     z-index: 2;
     position: absolute;
@@ -156,6 +186,18 @@ body{
     
     #header-center {
         top: 1.5rem;
+    }
+    
+    .header-iii {
+        top: 1.5rem;
+    }
+    
+    .header-iii h1 {
+        font-size: 4rem;
+    }
+    
+    .header-iii h2 {
+        font-size: 1.5rem;
     }
     
     .spotify-container {
@@ -258,6 +300,18 @@ body{
     
     #header-center {
         top: 1.5rem;
+    }
+    
+    .header-iii {
+        top: 1.5rem;
+    }
+    
+    .header-iii h1 {
+        font-size: 4rem;
+    }
+    
+    .header-iii h2 {
+        font-size: 1.5rem;
     }
     
     .spotify-container {
