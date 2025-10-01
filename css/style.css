@@ -281,9 +281,9 @@ body{
 .spotify-container {
     position: absolute;
     left: 50%;
-    bottom: 6rem;
+    top: 2rem;
     transform: translateX(-50%);
-    width: 90%;
+    width: 80%;
     max-width: 500px;
     z-index: 2;
 }
@@ -317,9 +317,17 @@ body{
     .spotify-container {
         width: 95%;
         max-width: 400px;
-        bottom: 5rem;
+        top: 1.5rem;
         max-height: 200px;
         overflow-y: auto;
+    }
+    
+    .spotify-container:nth-of-type(2) {
+        top: 8rem;
+    }
+    
+    .spotify-container:nth-of-type(3) {
+        top: 15rem;
     }
     
     .icons {
@@ -333,5 +341,20 @@ body{
     .icons img {
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+
+.cr-web-row {
+    width: 90% !important;
+    max-width: 520px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .cr-web-row {
+        width: 95% !important;
+        max-width: 420px !important;
     }
 }
